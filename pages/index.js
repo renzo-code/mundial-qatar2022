@@ -10,17 +10,57 @@ const Home = () => {
       <Layout>
         {/* <TitleHome>MUNDIAL QATAR 2022 SIGUE AQUÍ TODOS LOS DETALLES Y FIXTURES QUE DEJÓ EL SORTEO</TitleHome> */}
         <WrapperImgTitle>
-          <ImageTitle src="/images/Logo_title.png" />
+          <ImageTitle src="./images/Logo_title.png" />
         </WrapperImgTitle>
         <Container>
-          <BlockGroup title="GRUPO A" n={0} redirect="/grupo-a" />
-          <BlockGroup title="GRUPO B" n={1} redirect="/grupo-b" />
-          <BlockGroup title="GRUPO C" n={2} redirect="/grupo-c" />
-          <BlockGroup title="GRUPO D" n={3} redirect="/grupo-d" />
-          <BlockGroup title="GRUPO E" n={4} redirect="/grupo-e" />
-          <BlockGroup title="GRUPO F" n={5} redirect="/grupo-f" />
-          <BlockGroup title="GRUPO G" n={6} redirect="/grupo-g" />
-          <BlockGroup title="GRUPO H" n={7} redirect="/grupo-h" />
+          <BlockGroup 
+            title="GRUPO A" 
+            n={0} 
+            redirect="/grupo-a/"
+            // redirect="https://especiales.larepublica.pe/mundial-qatar-2022-clasificados-grupos-fixture-tabla-de-posiciones-horarios-partidos-copa-del-mundo-fifa-dpts/grupo-a/"
+          />
+          <BlockGroup 
+            title="GRUPO B" 
+            n={1} 
+            redirect="/grupo-b/"
+            // redirect="https://especiales.larepublica.pe/mundial-qatar-2022-clasificados-grupos-fixture-tabla-de-posiciones-horarios-partidos-copa-del-mundo-fifa-dpts/grupo-b/"
+          />
+          <BlockGroup 
+            title="GRUPO C" 
+            n={2} 
+            redirect="/grupo-c/"
+            // redirect="https://especiales.larepublica.pe/mundial-qatar-2022-clasificados-grupos-fixture-tabla-de-posiciones-horarios-partidos-copa-del-mundo-fifa-dpts/grupo-c/"
+          />
+          <BlockGroup 
+            title="GRUPO D" 
+            n={3} 
+            redirect="/grupo-d/"
+            // redirect="https://especiales.larepublica.pe/mundial-qatar-2022-clasificados-grupos-fixture-tabla-de-posiciones-horarios-partidos-copa-del-mundo-fifa-dpts/grupo-d/"
+          />
+          <BlockGroup 
+            title="GRUPO E" 
+            n={4} 
+            redirect="/grupo-e/"
+            // redirect="https://especiales.larepublica.pe/mundial-qatar-2022-clasificados-grupos-fixture-tabla-de-posiciones-horarios-partidos-copa-del-mundo-fifa-dpts/grupo-e/"
+          />
+          <BlockGroup 
+            title="GRUPO F" 
+            n={5} 
+            redirect="/grupo-f/"
+            // redirect="https://especiales.larepublica.pe/mundial-qatar-2022-clasificados-grupos-fixture-tabla-de-posiciones-horarios-partidos-copa-del-mundo-fifa-dpts/grupo-f/"
+          />
+          <BlockGroup 
+            title="GRUPO G" 
+            n={6} 
+            redirect="/grupo-g/"
+            // redirect="https://especiales.larepublica.pe/mundial-qatar-2022-clasificados-grupos-fixture-tabla-de-posiciones-horarios-partidos-copa-del-mundo-fifa-dpts/grupo-g/"
+          />
+          <BlockGroup 
+            title="GRUPO H" 
+            n={7} 
+            redirect="/grupo-h/"
+            // redirect="https://especiales.larepublica.pe/mundial-qatar-2022-clasificados-grupos-fixture-tabla-de-posiciones-horarios-partidos-copa-del-mundo-fifa-dpts/grupo-h/"
+          />
         </Container>
         {/* <CarouselNotices/> */}
       </Layout>
@@ -40,6 +80,12 @@ const WrapperImgTitle = styled.div`
   height: auto;
   width: 250px;
   margin: 0 auto;
+  padding-top: 30px;
+
+  @media (max-width: 550px){
+    width: 200px;
+    padding-top: 30px;
+  }
 `
 const ImageTitle = styled.img`
   height: 100%;

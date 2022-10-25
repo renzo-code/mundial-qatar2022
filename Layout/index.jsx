@@ -2,8 +2,11 @@ import React from 'react'
 
 import NextHead from 'next/head'
 import styled from 'styled-components'
+import Script from 'next/script'
+
 import Footer from 'Components/Footer'
 import Header from 'Components/Header'
+import OptaComp from 'Components/OptaSegurity'
 
 const Layout = (props) => {
   const { children } = props
@@ -16,16 +19,21 @@ const Layout = (props) => {
         <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.larepublica.pe/favicon-16x16.png" />
         <link rel="canonical" href="" />
         <title>Especiales | Mundial Qatar 2022</title>
-        <meta name="description" content="" />
+        {/* <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="googlebot" content="index,follow"/>
         <meta name="bingbot" content="index,follow"/>
         <meta name="robots" content="max-image-preview:large"/>
         <meta name="MobileOptimized" content="width" />
-        <meta name="HandheldFriendly" content="true" />
+        <meta name="HandheldFriendly" content="true" /> */}
+
+        {/* Metadatos Opta */}
+        <Script src="https://secure.widget.cloud.opta.net/2.0/js/widgets.opta.js" type="text/javascript"/>
+        <link rel="stylesheet" href="https://secure.widget.cloud.opta.net/2.0/css/widgets.opta.css" type="text/css" />
+        <OptaComp/>
 
         {/* Metadatos Twitter */}
-        <meta name="twitter:title" content=""/>
+        {/* <meta name="twitter:title" content=""/>
         <meta name="twitter:description" content="" />
         <meta name="twitter:image" content="" />
         <meta name="twitter:url" content="" />
@@ -34,10 +42,10 @@ const Layout = (props) => {
         <meta name="twitter:site" content="@larepublica_pe" />
         <meta name="twitter:creator" content="@larepublica_pe" />
         <meta name="twitter:width" content="828" />
-        <meta name="twitter:height" content="450" />
+        <meta name="twitter:height" content="450" /> */}
 
         {/* Metadatos Facebook */}
-        <meta property="og:title" content=""/>
+        {/* <meta property="og:title" content=""/>
         <meta property="og:description" content=""/>
         <meta property="og:image" content=""/>
         <meta property="og:url" content="" />
@@ -46,19 +54,19 @@ const Layout = (props) => {
         <meta property="og:image:height" content="450"/>
         <meta property="og:site_name" content="La República" />
         <meta property="fb:pages" content="145820412845"/>
-        <meta property="fb:app_id" content="602624269799095"/>
+        <meta property="fb:app_id" content="602624269799095"/> */}
 
       </NextHead>
       <Header/>
       <Wrapper>
         <LayoutContent>
-          <BanderaDecoration src="/images/banderas1.png"/>
-          <MarginDecoration src="/images/borde-r.png" />
+          <BanderaDecoration src="./images/banderas1.png"/>
+          <MarginDecoration src="./images/borde-r.png" />
           <LayoutBody>
             { children }
           </LayoutBody>
-            <MarginDecoration2  src='/images/borde-l.png'/>
-            <BanderaDecoration2 src='/images/banderas2.png' />
+            <MarginDecoration2  src='./images/borde-l.png'/>
+            <BanderaDecoration2 src='./images/banderas2.png' />
         </LayoutContent>
         <Footer/>
       </Wrapper>
@@ -81,7 +89,7 @@ const LayoutContent = styled.div`
   height: 100%;
   overflow-y: hidden;
   min-height: calc(100vh - 450px);
-  background-image: url("/images/fondo.png");
+  background-image: url("https://origin.cronosmedia.glr.pe/large/2022/10/07/lg_63404e7005a63264435763aa.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,6 +112,9 @@ const LayoutBody = styled.div`
   min-height: 500px;
   @media (max-width: 800px){
     padding: 0 35px 60px;
+  }
+  @media (max-width: 400px){
+    padding: 0 15px 60px;
   }
 `
 const BanderaDecoration = styled.img`

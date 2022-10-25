@@ -1,10 +1,19 @@
 import React from 'react'
 import Layout from 'Layout'
+import ViewGroup from 'Components/ViewGroup'
+
+import OptaGrupoE from 'Components/OptaCompeticion/TablePosition/opta-grupo-e'
+import FixtureGrupoE from 'Components/OptaCompeticion/Fixture/fix-grupo-e'
 
 const GroupE = () => {
   return(
     <Layout>
-      soy GroupE
+      <ViewGroup
+        key="E"
+        group="E"
+        fixture={<FixtureGrupoE/>}
+        tablePosition = {<OptaGrupoE/>}
+      />
     </Layout>
   )
 }

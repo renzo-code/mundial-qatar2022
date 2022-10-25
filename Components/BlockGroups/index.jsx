@@ -22,6 +22,7 @@ const BlockGroup = ({ title, n, redirect }) => {
                     image={item.image}
                     name={item.country}
                     url={item.url}
+                    // url={"https://especiales.larepublica.pe/mundial-qatar-2022-clasificados-grupos-fixture-tabla-de-posiciones-horarios-partidos-copa-del-mundo-fifa-dpts" + item.url + "/"}
                   />
                 </>
               )
@@ -77,6 +78,10 @@ const TitleGroup = styled.h2`
   color: white;
   font-weight: 900;
   width: auto;
+
+  @media (max-width: 550px){
+    font-size: 18px;
+  }
   /* -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);

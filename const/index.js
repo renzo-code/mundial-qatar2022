@@ -2,176 +2,176 @@ export const DateCountry = [
   [
     {
       country: "QATAR",
-      url: "/pais-qatar",
+      url: "/qatar",
       image: "./images/qatar.png"
     },
     {
       country: "ECUADOR",
-      url: "/pais-ecuador",
+      url: "/ecuador",
       image: "./images/ecuador.png"
     },
     {
       country: "SENEGAL",
-      url: "/pais-senegal",
+      url: "/senegal",
       image: "./images/senegal.png"
     },
     {
       country: "PAÍSES BAJOS",
-      url: "/pais-paises-bajos",
+      url: "/paises-bajos",
       image: "./images/paises-bajos.png"
     }
   ],
   [
     {
       country: "INGLATERRA",
-      url: "/pais-inglaterra",
+      url: "/inglaterra",
       image: "./images/inglaterra.png"
     },
     {
       country: "IRÁN",
-      url: "/pais-iran",
+      url: "/iran",
       image: "./images/iran.png"
     },
     {
       country: "ESTADOS UNIDOS",
-      url: "/pais-usa",
+      url: "/usa",
       image: "./images/eeuu.png"
     },
     {
       country: "GALES",
-      url: "/pais-gales",
+      url: "/gales",
       image: "./images/gales.png"
     }
   ],
   [
     {
       country: "ARGENTINA",
-      url: "/pais-argentina",
+      url: "/argentina",
       image: "./images/argentina.png"
     },
     {
       country: "ARABIA SAUDITA",
-      url: "/pais-arabia-saudita",
+      url: "/arabia-saudita",
       image: "./images/arabiaSaudita.png"
     },
     {
       country: "MÉXICO",
-      url: "/pais-mexico",
+      url: "/mexico",
       image: "./images/mexico.png"
     },
     {
       country: "POLONIA",
-      url: "/pais-polonia",
+      url: "/polonia",
       image: "./images/polonia.png"
     }
   ],
   [
     {
       country: "FRANCIA",
-      url: "/pais-francia",
+      url: "/francia",
       image: "./images/francia.png"
     },
     {
       country: "AUSTRALIA",
-      url: "/pais-australia",
+      url: "/australia",
       image: "./images/australia.png"
     },
     {
       country: "DINAMARCA",
-      url: "/pais-dinamarca",
+      url: "/dinamarca",
       image: "./images/dinamarca.png"
     },
     {
       country: "TÚNEZ",
-      url: "/pais-tunez",
+      url: "/tunez",
       image: "./images/tunez.png"
     }
   ],
   [
     {
       country: "ESPAÑA",
-      url: "/pais-espana",
+      url: "/espana",
       image: "./images/españa.png"
     },
     {
       country: "COSTA RICA",
-      url: "/pais-costa-rica",
+      url: "/costa-rica",
       image: "./images/costaRica.png"
     },
     {
       country: "ALEMANIA",
-      url: "/pais-alemania",
+      url: "/alemania",
       image: "./images/alemania.png"
     },
     {
       country: "JAPÓN",
-      url: "/pais-japon",
+      url: "/japon",
       image: "./images/japon.png"
     }
   ],
   [
     {
       country: "BÉLGICA",
-      url: "/pais-belgica",
+      url: "/belgica",
       image: "./images/belgica.png"
     },
     {
       country: "CANADÁ",
-      url: "/pais-canada",
+      url: "/canada",
       image: "./images/canada.png"
     },
     {
       country: "MARRUECOS",
-      url: "/pais-marruecos",
+      url: "/marruecos",
       image: "./images/marruecos.png"
     },
     {
       country: "CROACIA",
-      url: "/pais-croacia",
+      url: "/croacia",
       image: "./images/croacia.png"
     }
   ],
   [
     {
       country: "BRASIL",
-      url: "/pais-brasil",
+      url: "/brasil",
       image: "./images/brasil.png"
     },
     {
       country: "SERBIA",
-      url: "/pais-serbia",
+      url: "/serbia",
       image: "./images/serbia.png"
     },
     {
       country: "SUIZA",
-      url: "/pais-suiza",
+      url: "/suiza",
       image: "./images/suiza.png"
     },
     {
       country: "CAMERÚN",
-      url: "/pais-camerun",
+      url: "/camerun",
       image: "./images/camerun.png"
     }
   ],
   [
     {
       country: "PORTUGAL",
-      url: "/pais-portugal",
+      url: "/portugal",
       image: "./images/portugal.png"
     },
     {
       country: "GHANA",
-      url: "/pais-ghana",
+      url: "/ghana",
       image: "./images/ghana.png"
     },
     {
       country: "URUGUAY",
-      url: "/pais-uruguay",
+      url: "/uruguay",
       image: "./images/uruguay.png"
     },
     {
       country: "COREA DEL SUR",
-      url: "/pais-corea-del-sur",
+      url: "/corea-del-sur",
       image: "./images/coreaDelSur.png"
     }
   ],

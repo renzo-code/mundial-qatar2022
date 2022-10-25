@@ -2,28 +2,23 @@ import React from "react";
 
 import styled from 'styled-components'
 
-const ViewGroup = () => {
+const ViewGroup = ({ group, fixture, tablePosition, tableGoals }) => {
   return(
     <>
-      <WrapperTitle>
-        <TitleImg src="./images/title-group-a.png"/>
-      </WrapperTitle>
+      <Title>GRUPO {group}</Title>
+      <SubTitles>FIXTURE</SubTitles>
       <WrapperTableFixture>
-
+      {fixture}
       </WrapperTableFixture>
 
-      <WrapperTitle>
-        <TitleImg src="./images/table-positions.png"/>
-      </WrapperTitle>
+      <SubTitles>TABLA DE POSICIONES</SubTitles>
       <WrapperTablePosition>
-
+        {tablePosition}
       </WrapperTablePosition>
 
-      <WrapperTitle>
-        <TitleImg src="./images/table-goals.png"/>
-      </WrapperTitle>
+      <SubTitles>TABLA DE GOLEADORES</SubTitles>
       <WrapperTableGoals>
-
+        {tableGoals}
       </WrapperTableGoals>
     </>
   )
@@ -31,32 +26,48 @@ const ViewGroup = () => {
 
 export default ViewGroup
 
-const WrapperTitle = styled.div`
-  width: 500px;
-  height: auto;
-  margin: 0 auto;
+const Title = styled.h2`
+  font-size: 50px;
+  font-family: FTitle, Arial;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
 `
-const TitleImg = styled.img`
-  margin-top: 20px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+const SubTitles = styled.h2`
+  font-size: 34px;
+  letter-spacing: 1.5px;
+  font-family: FTitle, Arial;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  
+  &&::after{
+    content: "";
+    display: block;
+    background-color: #FF4B89;
+    width: 450px;
+    margin: 20px auto 0;
+    height: 5px;
+  }
 `
 const WrapperTableFixture = styled.div`
-  height: 550px;
-  width: 600px;
-  background-color: peru;
+  width: 100%;
+  height: auto;
+  padding: 10px;
   margin: 0 auto;
+  background-color: peru;
 `
 const WrapperTablePosition = styled.div`
-  height: 450px;
-  width: 600px;
-  background-color: skyblue;
+  width: 100%;
+  height: auto;
+  padding: 10px;
   margin: 0 auto;
+  background-color: skyblue;
 `
 const WrapperTableGoals = styled.div`
-  height: 450px;
-  width: 400px;
-  background-color: aquamarine;
+  width: 100%;
+  height: auto;
+  padding: 10px;
   margin: 0 auto;
+  background-color: aquamarine;
 `

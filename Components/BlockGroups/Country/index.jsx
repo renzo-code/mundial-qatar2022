@@ -22,7 +22,7 @@ const WrapperImage = styled.div`
   width: 117px;
   border-radius: 30px;
   @media (max-width: 550px){
-    width: 80px;
+    width: 106px;
     padding: 0 10px;
   }
 `

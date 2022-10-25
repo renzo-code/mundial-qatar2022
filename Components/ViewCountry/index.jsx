@@ -47,7 +47,7 @@ const ViewCountry = ({
           <h3>LA FIGURA:</h3>
           <h2>{nameStar}</h2>
           <div>
-            <img alt='Foto del entrenador' src={imgStar}/>
+            <img alt='Foto de la figura' src={imgStar}/>
           </div>
           <h3>{ageStar}</h3>
           <h3>Equipo actual:
@@ -97,11 +97,21 @@ const WrapperLogo = styled.div`
   height: auto;
   width: 250px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 40px 0 20px;
   img{
     height: 100%;
     width: 100%;
     padding-bottom: 20px;
+  }
+
+  @media (max-width: 600px){
+    width: 200px;
+  }
+  @media (max-width: 450px){
+    width: 180px;
+  }
+  @media (max-width: 400px){
+    width: 150px;
   }
 `
 const NameCountry = styled.h1`
@@ -154,6 +164,9 @@ const Description = styled.h2`
   @media (max-width: 900px){
     width: 100%;
   }
+  @media (max-width: 550px){
+    font-size: 17px;
+  }
 `
 const ContentInfo = styled.div`
   display: flex;
@@ -178,6 +191,7 @@ const BlockOne = styled.div`
     font-weight: 900;
     width: 80%;
     margin: 20px auto 0;
+    line-height: 19px;
     font-family: FInfo, arial;
     transform: scaleY(1.1);
     @media (max-width: 650px){
@@ -193,11 +207,21 @@ const BlockOne = styled.div`
     font-size: 25px;
     font-weight: 900;
     margin: 5px 20px 10px;
+    min-height: 85px;
+    line-height: 28px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 650px){
-      margin: 5px auto 10px;
       font-size: 20px;
     }
+    @media (max-width: 450px){
+      line-height: 24px;
+    }
+    /* @media (max-width: 670px){
+      line-height: 23px;
+    } */
   }
   div{
     height: auto;
@@ -215,7 +239,7 @@ const BlockOne = styled.div`
       width: 160px;
     }
     @media (max-width: 450px){
-      width: 130px;
+      width: 150px;
     }
   }
   @media (max-width: 650px){
@@ -235,6 +259,7 @@ const BlockTwo = styled.div`
     margin: 20px auto 0;
     font-family: FInfo, arial;
     transform: scaleY(1.1);
+    line-height: 21px;
     @media (max-width: 650px){
       margin: 5px auto 10px;
       font-size: 16px;
@@ -248,10 +273,17 @@ const BlockTwo = styled.div`
     font-size: 25px;
     font-weight: 900;
     margin: 5px 20px 10px;
+    line-height: 28px;
+    min-height: 85px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 650px){
-      margin: 5px auto 10px;
       font-size: 20px;
+    }
+    @media (max-width: 450px){
+      line-height: 24px;
     }
   }
   div{
@@ -270,7 +302,7 @@ const BlockTwo = styled.div`
       width: 160px;
     }
     @media (max-width: 450px){
-      width: 130px;
+      width: 150px;
     }
   }
   @media (max-width: 650px){
